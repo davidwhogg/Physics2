@@ -10,9 +10,7 @@ ALLFIGURES = dc_circuit1.eps dc_circuit2.eps dc_circuit3.eps \
 	dc_circuit4.eps dc_circuit5.eps dc_circuit6.eps \
 	final1.eps final2.eps final3.eps
 
-PSFILES = $(ALLFIGURES) $(patsubst %.tex,%.pdf,$(wildcard ps*.tex))
-
-all: gp_final_exam_2009.pdf
+all: $(patsubst %.tex,%.pdf,$(wildcard physics2_*.tex))
 
 .tex.pdf:
 	pdflatex $*
