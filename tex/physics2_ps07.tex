@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\input{physics2}
+\begin{document}
+
+\section*{NYU Physics 2---Problem Set 7}
+
+Due Thursday 2020 April 2 before lecture.
+
+\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
+The definition of the electric field $\vec{E}$ and magnetic field
+$\vec{B}$ is
+\begin{equation}
+  \vec{F} = q\,[\vec{E} + \vec{v}\cross\vec{B}]
+  \quad .
+\end{equation}
+Gauss's Law and Ampere's Law are
+\begin{equation}
+  \oiint\vec{E}\cdot\dd\vec{a} = \frac{Q}{\epsilon_0}
+  \quad ;
+\end{equation}
+\begin{equation}
+  \oint\vec{B}\cdot\dd\vec{\ell} = \mu_0\,I
+  \quad .
+\end{equation}
+Use these three equations to figure out the units of the inverse
+product $1/(\mu_0\,\epsilon_0)$. What extremely fundamental constant
+is this going to be related to?
+
+\textit{Hint:} Gauss's Law has the units of an electric field times an
+area. Ampere's Law has the units of a magnetic field times a
+length. And the definition of the fields tells you that the units of
+the magnetic field differ from the units of the electric field by a
+factor of velocity. Does this help?
+
+\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
+Use the Biot-Savart Law
+\begin{equation}
+  \dd\vec{B} = \frac{\mu_0\,I}{4\pi}\,\frac{\dd\vec{\ell}\cross\vec{r}}{|\vec{r}|^3}
+\end{equation}
+to show that the magnetic field $\vec{B}$ at the center of a circular
+ring of radius $R$ carrying current $I$ has magnitude
+$(\mu_0\,I)/(2\,R)$. What direction is the field? You might want to
+read up on the Biot-Savart methodology for computing a magnetic field
+from a current-carrying wire.
+
+\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
+Consider a pair of very very long straight wires carrying current $I$,
+separated by a distance $2\,a$, connected at their ends by a
+semicircular arc of wire of radius $a$ as shown. What is the magnetic
+field $\vec{B}$ at the point indicated as $Q$? Give the magnitude and
+the direction of the field. Unlike what is shown in the drawing,
+the idea is that the straight portions go on for a very long distance;
+way way longer than $a$.
+
+\textit{Hint:} You will want to use superposition and symmetry to
+solve this one, not the integral!
+\marginpar{\includegraphics[width=\marginparwidth]{hairpin.pdf}}
+
+\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
+Here's a terrible model for Earth's magnetic field: Imagine that
+Earth's core is a circular current loop carrying current $I$, with
+radius $R$ equal to the radius of the core. In this model, what does
+the current have to be to make the field we observe at Earth's
+north magnetic pole? Be as imprecise as you like. This is just an
+order-of-magnitude problem! Give a numerical answer in Amperes.
+
+\end{document}
