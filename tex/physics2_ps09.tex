@@ -7,16 +7,61 @@
 Due Thursday 2020 April 16 before lecture.
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-foo
+Look at the $LC$ circuit we discussed in Lecture on 2020-04-07 and
+2020-04-09. Make time-aligned plots of the charge $Q(t)$, current
+$I(t)$, energy in the capacitor $U_C=(1/2)\,Q^2/C$, energy in the
+inductor $U_L=(1/2)\,L\,I^2$, and total energy $U_C+U_L$ as a function
+of time over two periods.
+
+Be sure to label very clearly the minimum and maximum values of all
+five curves (these will be expressions involving $Q_0, L, C$), and the
+time locations of any zero-crossings.
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-foo
+Use very very rough arguments to estimate the inductance, capacitance,
+and resistance of a steel key ring that is 1 inch in diameter, made of
+wire that is, say, $1\,\mm$ in diameter. Give your answers numerically
+in SI units.
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-some problem involving a torque on a wire loop in a field
+Imagine spinning a loop of area $A$ inside a magnetic field $\vec{B}$.
+The loop is spinning on an axis in the plane of the loop (so the loop
+is flipping over and over).  The spin axis is perpendicular to the
+$\vec{B}$-field.  If we spin the loop at angular frequency $\Omega$,
+what is the emf induced in the loop as a function of time? Give as
+general an expression as you can get.
+
+\textsl{Hint:} Think about how the magnetic flux changes with time,
+and this in turn depends on how the area of the loop projects into the
+$\vec{B}$ direction.
+
+Now imagine that the loop has total resistance $R$. How much power is
+dissipated by this process? That is, how much mechanical power does it
+take to spin this loop?
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-bar
+Take a deep breath!
+Then take two derivatives with respect to time of this expression:
+\begin{equation}
+  Q(t) = Q_0\,\exp(-\frac{\gamma}{2}\,t)\,\cos(\omega\,t+\phi)
+\end{equation}
+The first derivative will have two terms, one with a cosine and one
+with a sine. The second derivative will have four terms, two with a
+cosine and two with a sine. Now consider the differential equation:
+\begin{equation}
+  \frac{\dd^2 Q}{\dd t^2} + \frac{R}{L}\,\frac{\dd Q}{\dd t} + \frac{1}{LC}\,Q = 0
+\end{equation}
+This differential equation can be satisfied by that form for $Q(t)$,
+provided that $\gamma$ has some specific relationship to $L, R$ and
+$\omega$ has some specific relationship to $L, R, C$. What is that
+relationship?
+
+\textsl{Hint:} To find this relationship, all seven terms (one from
+the zeroth derivative, two from the first derivative, and four from
+the second derivative) must add to zero. But even more importantly,
+because this equation must be true \emph{at all times}, all the cosine
+terms must sum to zero and all the sine terms must separately sum to
+zero. Does that help?
 
 \end{document}
 
