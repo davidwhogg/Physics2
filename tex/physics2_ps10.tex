@@ -7,19 +7,58 @@
 Due Thursday 2020 April 23 before lecture.
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-Hello-world circuits; time-aligned plots of voltage and current and power.
+Look at the ``hello world'' AC circuits shown in Lectures on
+2020-04-14 and 2020-04-16. For each of them, draw the circuit, showing
+the sign convention you are using for current and voltage. And then
+make time-aligned plots of the voltage \foreign{vs} time, current
+\foreign{vs} time for two periods of oscillation, and power dissipated
+$I\,V$ (the product). Make these plots for at least two periods of
+oscillation. Clearly mark each plot with the maximum and minimum
+values of the curves. These values will depend on variables like $V,
+R, C, L, \omega$.
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-Some circuit elements combined into parallel and series; what's the
-total complex impedance?
+If you have an inductor $L$ and a capacitor $C$ in series, what does
+the total complex impedance $Z$ approach as $\omega\rightarrow
+(L\,C)^{1/2}$? If you have the same two elements in parallel, what
+does the total complex impedance approach in this same limit?
+
+Now imagine that associated with the inductor $L$ there is a
+resistance $R$. That is, there is always a small resistance $R$ in
+parallel with the inductor, in both cases. Now what do your two limits
+become?
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-Plot the amplitude and phase of the current in the LRC AC circuit as a
-function of driving frequency. Get the limits right, the peak height
-and peak location right.
+In Lecture on 2020-04-16 we found, in the complex formalism, that for
+an LRC circuit driven by an AC voltage source producing amplitude $V$ and frequency $\omega$, the current flowing in the
+circuit is
+\begin{equation}\label{eq:res}
+  I = \frac{V}{R + i\,\left(\omega\,L - \frac{1}{\omega\,C}\right)}\,\exp(i\,\omega\,t)
+  \quad .
+\end{equation}
+Plot the amplitude (the magnitude of the complex prefactor in front of
+the exponential) of this current as a function of frequency
+$\omega$. Be sure to label the plot with the maximum value, the limit
+at $\omega\rightarrow 0$, and the asymptotic limit at
+$\omega\rightarrow\infty$.
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-What is the Q for an FM radio receiver?
+Here's a dumb model of an FM radio circuit: It is a circuit that has a
+resonance (big current $I$ given driving voltage $V$) at the radio-station
+carrier frequency $f$, but very little response (small current given
+driving voltage) at the carrier frequency of other nearby radio stations.
+Assume that the response is given by something like
+equation~(\ref{eq:res}). What do you need to be true about $R$, $L$,
+and $C$ for a radio to be tuned to the frequency of The Beat of New
+York KTU at 103.5 (what units are those?),
+but have less than 10-percent as much
+response to a pirate radio station operating at 103.7? Assume, for
+definiteness, that these two stations are impinging on the radio with
+the same voltage amplitude $V$.
+
+You are going to get one relationship between $L$ and
+$C$ to ensure that the radio is tuned to 103.5, and then there is a
+relationship also involving $R$ to ensure that the radio is
+insensitive to 103.7.
 
 \end{document}
-
