@@ -7,7 +7,30 @@
 Due Thursday 2020 April 30 before lecture.
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-A low-pass filter for voltage can be created as shown....
+A low-pass filter for voltage can be created as shown.
+For any input AC voltage amplitude $V$,
+the output voltage $V_{ab}$ will be a strong function of frequency $\omega$.
+Set the resistance to $120\,\ohm$ and the capacitance to $100\,\muF$
+and plot the ratio $|V_{ab}|/V$ as a function of
+$\omega$ over the range $0<\omega<2000\,\radps$.
+Label your plot with the value of the voltage ratio at $\omega\rightarrow 0$ and
+with the frequency $\omega_{1/2}$ at which the voltage ratio is half of its
+value at zero frequency. Write that latter label with a numerical value with proper
+units.
+
+Note that the voltage ratio $|V_{ab}|/V$ involves a magnitude because the
+voltage amplitude $V_{ab}$ will be a complex number. This problem and the
+next one will really make use of the complex impedance rules.
+
+\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
+In Lecture we solved the problem of an AC circuit where the generator,
+capacitor, resistor, and inductor are all in series.
+Now solve the problem for the AC circuit where all four components are
+in parallel with one another.
+That is, what is the complex impedance $Z$ of $L, R, C$ all in parallel?
+And what is the complex current amplitude $I$
+and its magnitude $|I|$ given the AC input voltage
+with amplitude $V$ and frequency $\omega$?
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
 Imagine you have a long straight wire running along the $x$-axis.
@@ -24,12 +47,40 @@ the range $0<r<3\,a$.
 Plot your result $|\vec{B}|$ \foreign{vs} $r$, labeling the value at
 $r=0$ and the maximum value.
 Show that at $r>a$ you get for $|\vec{B}|$ what you would have gotten if you had just used
-the $\mu_0\,I$ term.
+the $\mu_0\,I$ term instead of the $\dd\vec{E}/\dd t$ term.
 
 \paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-foo
+Let's build a model of the fields inside a resistor.
+Imagine you have a perfectly cylindrical resistor of length $\ell$ and
+radius $a$, carrying total current $I$. If the total resistance is $R$,
+then there is a voltage drop $V=I\,R$ down the length of the resistor. This
+means that the resistor contains an electric field $\vec{E}$ inside it. What is
+the magnitude $|\vec{E}|$ and direction of that field $E$?
+Give your answer in terms of $R, \ell, I$.
 
-\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-bar
+Now that $\vec{E}$ field must be created by charges; where are those charges?
+What charge densities must exist in this problem, and where? Imagine that
+the ends of the resistor are conducting circular plates of radius $a$ and
+the interior of the resistor is some kind of resistive material. Does it
+make sense now that any resistor must also have capacitance? Roughly how
+much charge $+Q, -Q$ must be on those plates?
+Give your answer in terms of $R, \ell, a, I$.
+
+In order to solve this problem, assume that the $\vec{E}$ field is entirely
+contained inside the resistor. That's not true! But this problem is intended
+to be conceptual not exact.
+
+Now imagine (incorrectly, it also turns out) that the current is uniformly distributed
+throughout the resistor. What is the current density $\vec{J}$ inside the
+resistor (magnitude and direction). You might have to look up the definition
+of current density in your textbook. The resistivity $\rho$ we encountered in a
+previous Problem Set should be related to these by $\vec{E}=\rho\,\vec{J}$.
+This is the ``differential form'' of Ohm's Law.
+Check that this works out in terms of units.
+
+Now, finally, what is the direction and magnitude of the magnetic field $\vec{B}$
+at the surface of the resistor? In the final week of class, the quantity
+$\vec{E}\times\vec{B}$ will become important. Which way does that vector point in
+this case? If you want to read ahead, look up ``Poynting flux'' or ``Poynting vector''.
 
 \end{document}
