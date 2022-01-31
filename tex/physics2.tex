@@ -12,12 +12,14 @@
 % problem formatting
 \newcommand{\problemname}{Problem}
 \newcounter{problem}
+\newcommand{\startproblem}{\paragraph{Problem~\theproblem:}\refstepcounter{problem}}
 
 % words
 \newcommand{\foreign}[1]{\textsl{#1}}
 \newcommand{\vs}{\foreign{vs}}
 
 % math
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
 \newcommand{\dd}{\mathrm{d}}
 \newcommand{\e}{\mathrm{e}}
 \newcommand{\cross}{\times}
