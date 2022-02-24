@@ -4,21 +4,11 @@
 
 \section*{NYU Physics 2---Problem Set 4}
 
-Due Thursday 2020 February 27 at the beginning of lecture.
+Due Thursday 2022 February 24 before 12:30\,pm on Brightspace.
 
-\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-Do a calculation similar to the one Javan did in Lecture on 2020-02-20
-for a spherical capacitor, but instead for a plane-parallel capacitor
-of very large area $A$ and very small separation $h$ between the
-plates. You can do this by assuming that the plates are infinitely
-large when you compute the field $E$, but finite area when you compute the
-total charge $Q$. Derive an expression for this capactance; your
-expression should be in terms of $A$ and $h$. Compare your answer to
-answers on the internet; are you good?
-
-\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
+\startproblem
 Look up the total storage capacity of the battery system of a
-commercial fully-electric car, like a Volt, Tesla, or eGolf. It might
+commercial fully-electric car, like a Bolt, Tesla, or eGolf. It might
 be given in amp-hours, or it might be given in joules or
 joules-equivalent (like hp-hours or gallons of gasoline
 equivalent). And look up also what voltage at which the automobile
@@ -30,21 +20,50 @@ is fully charged. That is, we want to know, in numbers with SI units, the voltag
 charge, capacitance, and stored energy of the system. Now imagine that
 the capacitors in the system consist of two very thin sheets separated
 by $1\,\mum$.  What would be the total area $A$ you would need for all
-those sheets? Again, a number with SI units.
+those sheets? Again, provide a number in SI units.
 
 \emph{Extra part, not for credit:} Does the energy storage you found
 make sense if you want a fully-charged range of hundreds of miles? \emph{How
 would you even compute that?}
 
-\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-Expressions for capacitance involve ratios of area to distance.  That
-ratio has units of length. What is the capacitance corresponding to
-the radius of the Earth? Interpret this capacitance. Compare it to the
-capacitance of capacitors that you can buy (for, say, less than
-100\,USD) on the internet. Can you buy a capacitor with \emph{more
-  capacitance than the entire Earth}? If so, how or why? What gives?
+\emph{Extra part, not for credit:} What are the best dielectrics you can find?
+By what factor can you reduce the area you found above by employing an excellent
+dielectric?
 
-\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
+\startproblem
+Expressions for capacitance have units of $\epsilon_0\,R$ where $R$ is a length.
+What is the capacitance corresponding to the radius of the Earth?
+Interpret this capacitance.
+Compare it to the capacitance of capacitors that you can buy (for,
+say, less than 100\,USD) on the internet.
+Can you buy a capacitor with \emph{way more capacitance than the entire
+  Earth}?
+If so, how or why? What gives?
+
+\startproblem
+Compute the energy stored in a spherical capacitor three ways!
+The capacitor will have two concentric spherical plates.
+The inner plate has outer radius $a$, and the outer plate has
+inner radius $b>a$.
+The gap is filled with vacuum.
+
+\textsl{(a)}
+Begin by computing the capacitance $C$ of this capacitor, and
+use the formula for the energy in a capacitor of capacitance $C$
+charged up to charge $Q$.
+
+\textsl{(b)}
+Then compute the energy in the capacitor again by looking up a formula
+for the energy density stored in the electric field $\vec{E}$, and
+integrating over the interior of the capacitor.
+
+\textsl{(c)}
+Then compute the energy in the capacitor by using the formula you
+computed on the previous Problem Set for a charged sphere, and taking
+a difference between two spheres.  Why would that possibly work as a
+calculation technique? Energies aren't vectors!
+
+\startproblem
 Imagine you add two capacitors in parallel. Make a heuristic argument
 that the capacitances should add together. Imagine you add two capacitors
 in series. Make a heuristic argument that the inverse-capacitances should
