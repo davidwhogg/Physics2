@@ -4,9 +4,9 @@
 
 \section*{NYU Physics 2---Problem Set 11}
 
-Due Thursday 2020 April 30 before lecture.
+Due Thursday 2022 April 28 at 12:30\,pm on Brightspace.
 
-\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
+\startproblem%
 A low-pass filter for voltage can be created as shown.
 For any input AC voltage amplitude $V$,
 the output voltage $V_{ab}$ will be a strong function of frequency $\omega$.
@@ -23,12 +23,10 @@ Note that the voltage ratio $|V_{ab}|/V$ involves a magnitude because the
 voltage amplitude $V_{ab}$ will be a complex number. This problem and the
 next one will really make use of the complex impedance rules.
 
-\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-In Lecture we solved the problem of an AC circuit where the generator,
-capacitor, resistor, and inductor are all in series.
-Now solve the problem for the AC circuit where all four components are
-in parallel with one another.
-That is, what is the complex impedance $Z$ of $L, R, C$ all in parallel?
+\startproblem%
+In Lecture (a while ago) we considered the problem of an AC circuit in which the generator,
+capacitor, resistor, and inductor are all in parallel.
+That is, what is the total complex impedance $Z$ of the $L, R, C$ all in parallel?
 And what is the complex current amplitude $I$
 and its magnitude $|I|$ given the AC input voltage
 with amplitude $V$ and frequency $\omega$?
@@ -38,7 +36,7 @@ frequency $\omega$ for a fixed voltage amplitude $V$. Mark the
 location and value of the minimum current amplitude, if there
 is a minimum.
 
-\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
+\startproblem%
 Imagine you have a long straight wire running along the $x$-axis.
 Now imagine that centered at $x=0$ there is a parallel-plate capacitor
 with circular plates of radius $a$, separated by a tiny gap $h\ll a$,
@@ -55,14 +53,14 @@ $r=0$ and the maximum value.
 Show that at $r>a$ you get for $|\vec{B}|$ what you would have gotten if you had just used
 the $\mu_0\,I$ term instead of the $\dd\vec{E}/\dd t$ term.
 
-\paragraph{Problem~\theproblem:}\refstepcounter{problem}%
-Let's build a model of the fields inside a resistor.
+\startproblem%
+Let's build a simplified model of the fields inside a resistor.
 Imagine you have a perfectly cylindrical resistor of length $\ell$ and
 radius $a$, carrying total current $I$. If the total resistance is $R$,
 then there is a voltage drop $V=I\,R$ down the length of the resistor. This
 means that the resistor contains an electric field $\vec{E}$ inside it. What is
 the magnitude $|\vec{E}|$ and direction of that field $E$?
-Give your answer in terms of $R, \ell, I$.
+Give your answer in terms of $R, \ell, a, I$.
 
 Now that $\vec{E}$ field must be created by charges; where are those charges?
 What charge densities must exist in this problem, and where? Imagine that
@@ -85,8 +83,14 @@ This is the ``differential form'' of Ohm's Law.
 Check that this works out in terms of units.
 
 Now, finally, what is the direction and magnitude of the magnetic field $\vec{B}$
-at the surface of the resistor? In the final week of class, the quantity
-$\vec{E}\times\vec{B}$ will become important. Which way does that vector point in
-this case? If you want to read ahead, look up ``Poynting flux'' or ``Poynting vector''.
+at the surface of the resistor? Compute the ``Poynting vector'' quantity $\vec{S}$
+\begin{equation}
+  \vec{S} = \frac{1}{\mu_0}\,\vec{E}\cross\vec{B}
+\end{equation}
+at the surface of the resistor.
+Integrate the flux of $\vec{S}$ into the resistor by the standard way we do integrals
+of vectors over the surface of the resistor.
+Compare this integral to the power $I^2\,R$ dissipated by the resistor.
+Are the units the same? Is the value the same?
 
 \end{document}
