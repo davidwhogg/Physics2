@@ -4,32 +4,10 @@
 
 \section*{NYU Physics 2---Problem Set 10}
 
-Due Thursday 2022 April 21 by 12:30\,pm on Brightspace.
+Due Thursday 2023 April 20 by 12:30\,pm on Brightspace.
 
 \startproblem%
-In lecture on 2022-04-07 we considered a very simple circuit that consisted only
-of a capacitor $C$ and an inductor $L$ (we imagined $R\rightarrow 0$).
-We showed that this circuit creates a differential equation whose solutions
-are sines and cosines.
-Imagine that the charge $Q$ on the capacitor is varying with time like
-\begin{equation}
-  Q(t) = Q_0\,\cos(\omega_0\,t) ~,
-\end{equation}
-where $\omega_0 = 1/\sqrt{LC}$.
-Now remind yourself of (or look up) the energy stored in a capacitor, and the energy
-stored in an inductor, and plot these two energies vs time, on the same graph.
-Be sure to mark your graph with the amplitude of each curve, and the period and anything
-else you think might be relevant.
-Plot also the total energy (energy in capacitor plus energy in inductor).
-
-\textsl{Note:} To do this problem you will have to take the derivative of $Q(t)$ to get
-$I(t)$; recall that in our sign convention for this problem, $I(t)=-\dd Q/\dd t$.
-
-\textsl{Hint:} If everything goes well in this problem, you will find yourself using the fact that $\sin^2\theta + \cos^2\theta = 1$.
-
-\startproblem%
-Look at the AC circuit we discussed in Lecture on
-2022-04-12, which had an AC generator $V,\omega$, a resistor $R$,
+Look at the AC circuit we discussed in Lecture that had an AC generator $V,\omega$, a resistor $R$,
 a capacitor $C$, and an inductor $L$, all in parallel.
 The AC generator produces a time-dependent voltage
 \begin{equation}
@@ -49,7 +27,7 @@ if we we associate an impedance to each of the circuit elements as follows:
   Z_C &= \frac{1}{i\,\omega\,C} \\
   Z_L &= i\,\omega\,L ~.
 \end{align}
-At some point you might need to use the facts $i^2 = -1$ and $1/i = -i$. Or not!
+At some point you might need to use the facts $i^2 = -1$ and $1/i = -i$.
 
 \startproblem%
 If you have an inductor $L$ and a capacitor $C$ in series, what does
@@ -57,40 +35,36 @@ the total complex impedance $Z$ approach as $\omega\rightarrow
 (L\,C)^{-1/2}$? If you have the same two elements in parallel, what
 does the total complex impedance approach in this same limit?
 
-Now imagine that associated with the inductor $L$ there is a
+Now imagine that, associated with the inductor $L$, there is a small
 resistance $R$. That is, there is always a small resistance $R$ in
 series with the inductor, in both cases. Now what do your two limits
 become?
 
 \textsl{Note:} To solve this problem you will have to use the fact that
-complex impedances add in series in parallel the way resistances do, but
-in complex math.
+complex impedances add in series and in parallel the way resistances do, but
+now using complex math.
 
-%% % I'm just not going to do this problem this year.
-%% \startproblem%
-%% In Lecture on 2020-04-16 we found, in the complex formalism, that for
-%% an LRC circuit driven by an AC voltage source producing amplitude $V$ and frequency $\omega$, the current flowing in the
-%% circuit is
-%% \begin{equation}\label{eq:res}
-%%   I = \frac{V}{R + i\,\left(\omega\,L - \frac{1}{\omega\,C}\right)}\,\exp(i\,\omega\,t)
-%%   \quad .
-%% \end{equation}
-%% Plot the amplitude (the magnitude of the complex prefactor in front of
-%% the exponential) of this current as a function of frequency
-%% $\omega$. Be sure to label the plot with the maximum value, the limit
-%% at $\omega\rightarrow 0$, and the asymptotic limit at
-%% $\omega\rightarrow\infty$.
+\startproblem%
+In Lecture we will find (and in your textbook you will find), in the complex formalism, that for
+an LRC circuit driven by an AC voltage source producing amplitude $V$ and frequency $\omega$, the current flowing in the
+circuit is
+\begin{equation}\label{eq:res}
+  I = \frac{V}{R + i\,\left(\omega\,L - \frac{1}{\omega\,C}\right)}\,\exp(i\,\omega\,t)
+  \quad .
+\end{equation}
+(Or, really, $I(t)$ is the real part of this expression!)
+Plot the amplitude (the magnitude of the complex prefactor in front of
+the exponential) of this current as a function of frequency
+$\omega$. Be sure to label the plot with the maximum value, the behavior as
+$\omega\rightarrow 0$, and the behavior as
+$\omega\rightarrow\infty$.
 
 \startproblem%
 Here's a dumb model of an FM radio receiver circuit: It is a circuit that has a
 resonance (big current $I$ given driving voltage $V$) at the radio-station
 carrier frequency $f$, but very little response (small current given
 driving voltage) at the carrier frequency of other nearby radio stations.
-Assume that the response is given by something like
-\begin{equation}\label{eq:res}
-  I = \frac{V}{R + i\,\left(\omega\,L - \frac{1}{\omega\,C}\right)}\,\exp(i\,\omega\,t) ~,
-\end{equation}
-which is an equation that appears in the reading for a resonant circuit.
+Assume that the response is given by something like what's given in (\ref{eq:res}).
 What do you need to be true about $R$, $L$,
 and $C$ for a radio to be tuned to the frequency of The Beat of New
 York KTU at 103.5 (what units are those?),
